@@ -1,5 +1,9 @@
-<!DOCTYPE html><html><head>
-<title>Calculator</title><meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<meta charset="utf-8">
+
 <script type="text/javascript">
 function cube() {
  var num = document.getElementById("n1");
@@ -8,11 +12,21 @@ function cube() {
 </script>
 
 <script type="text/javascript">
+
 function sin() {
  var num = document.getElementById("n1");
  num.value = Math.sin(num.value);
 }
 </script>
+
+<script type="text/javascript">
+function alacuarta() {
+ var num = document.getElementById("n1");
+ num.value = Math.pow(num.value, 4);
+}
+</script>
+
+
 </head>
 <body>
  <h1>Calculadora de Ricardo Moya Martín</h1>
@@ -22,6 +36,9 @@ function sin() {
  <button onclick="cube()"> x^3 </button>
 
  <button onclick="sin()"> sin </button>
+
+ <button onclick="alacuarta()"> x^4 </button>
+
  </p>
 </body>
 </html>
